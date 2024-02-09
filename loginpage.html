@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://otpless.com/favicon.ico" />
+    <title>OTPless Login Page</title>
+</head>
+<body style="background-color: rgb(252, 229, 252);">
+    <div id="otpless-login-page"></div>
+    <script type="text/javascript" src="https://otpless.com/auth.js" cid="VBKPRDXPUYDXLM24G4JDR6PKC31ZAX8H"></script>
+
+    <script type="text/javascript"> 
+        function otpless(otplessUser) {
+         console.log(JSON.stringify(otplessUser));
+
+         localStorage.setItem('otplessUserData', JSON.stringify(otplessUser));
+
+         window.location.href = 'otherpage.html';
+        }
+    </script>
+
+</body>
+</html>
